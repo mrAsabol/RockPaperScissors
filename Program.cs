@@ -74,6 +74,7 @@ namespace Rock__paper__scissors
                 Console.ForegroundColor = color;
                 Console.WriteLine(message);
                 Console.ResetColor();
+                //end of program
             }
         }
     }

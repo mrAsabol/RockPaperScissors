@@ -6,11 +6,13 @@ namespace RockPaperScissors
     {
         static void Main(string[] args)
         {
+            //declaring variables
             int computerScore = 0;
             int userScore = 0;
             string[] computerChoices = { "rock", "paper", "scissors" };
             string playAgain = "Y";
-
+            
+            //starting loop
             while (playAgain == "Y")
             {
                 string computerChoice = computerChoices[new Random().Next(0, computerChoices.Length)];

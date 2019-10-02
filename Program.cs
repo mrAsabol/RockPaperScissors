@@ -32,7 +32,7 @@ namespace Rock__paper__scissors
                     Console.WriteLine("User choose: " + userChoice);
                 }
 
-
+                //declaring if clauses
                 if (validChoice == true)
                 {
                     if (computerChoice == userChoice)

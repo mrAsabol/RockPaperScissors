@@ -10,10 +10,10 @@ namespace RockPaperScissors
             int computerScore = 0;
             int userScore = 0;
             string[] computerChoices = { "rock", "paper", "scissors" };
-            string playAgain = "Y";
+            string playAgain = "YES";
             
             //starting loop
-            while (playAgain == "Y")
+            while (playAgain == "YES")
             {
                 string computerChoice = computerChoices[new Random().Next(0, computerChoices.Length)];
                 Console.Write("Please enter your choice - rock, paper or scissors: ");
@@ -41,7 +41,7 @@ namespace RockPaperScissors
                     {
                         PrintColorMessage(ConsoleColor.Yellow, "It's a DRAW!");
                         PrintColorMessage(ConsoleColor.Magenta, "Computer " + computerScore + ":" + "User " + userScore);
-                        PrintColorMessage(ConsoleColor.Cyan, "Play again? Y or N");
+                        PrintColorMessage(ConsoleColor.Cyan, "Play again? YES or NO");
                         playAgain = Console.ReadLine().ToUpper();
                     }
                     else
@@ -59,7 +59,7 @@ namespace RockPaperScissors
                             PrintColorMessage(ConsoleColor.DarkGreen, "You WON!");
                             userScore++;
                             PrintColorMessage(ConsoleColor.Magenta, "Computer " + computerScore + ":" + "User " + userScore);
-                            PrintColorMessage(ConsoleColor.Cyan, "Play again? Y or N");
+                            PrintColorMessage(ConsoleColor.Cyan, "Play again? YES or NO");
                             playAgain = Console.ReadLine().ToUpper();
                         }
                     }

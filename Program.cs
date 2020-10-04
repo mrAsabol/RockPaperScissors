@@ -40,7 +40,7 @@ namespace RockPaperScissors
                     if (computerChoice == userChoice)
                     {
                         PrintColorMessage(ConsoleColor.Yellow, "It's a DRAW!");
-                        PrintColorMessage(ConsoleColor.Magenta, "Computer " + computerScore + ":" + "User " + userScore);
+                        PrintColorMessage(ConsoleColor.Magenta, "Computer " + computerScore + ":" + "You " + userScore);
                         PrintColorMessage(ConsoleColor.Cyan, "Play again? Y or N");
                         playAgain = Console.ReadLine().ToUpper();
                     }
@@ -50,7 +50,7 @@ namespace RockPaperScissors
                         {
                             PrintColorMessage(ConsoleColor.Red, "You LOST!");
                             computerScore++;
-                            PrintColorMessage(ConsoleColor.Magenta, "Computer " + computerScore + ":" + "User " + userScore);
+                            PrintColorMessage(ConsoleColor.Magenta, "Computer " + computerScore + ":" + "You " + userScore);
                             PrintColorMessage(ConsoleColor.Cyan, "Play again? Y or N");
                             playAgain = Console.ReadLine().ToUpper();
                         }
@@ -58,8 +58,10 @@ namespace RockPaperScissors
                         {
                             PrintColorMessage(ConsoleColor.DarkGreen, "You WON!");
                             userScore++;
-                            PrintColorMessage(ConsoleColor.Magenta, "Computer " + computerScore + ":" + "User " + userScore);
-                            PrintColorMessage(ConsoleColor.Cyan, "Do you want to play again? Y or N");
+
+                            PrintColorMessage(ConsoleColor.Magenta, "Computer " + computerScore + ":" + "You " + userScore);
+                            PrintColorMessage(ConsoleColor.Cyan, "Play again? Y or N");
+
                             playAgain = Console.ReadLine().ToUpper();
                         }
                     }
@@ -67,7 +69,7 @@ namespace RockPaperScissors
             }
 
             Console.BackgroundColor = ConsoleColor.Red;
-            Console.WriteLine("FINAL SCORE IS: " + "COMPUTER: " + computerScore + " - " + "USER: " + userScore);
+            Console.WriteLine("FINAL SCORE IS: " + "COMPUTER: " + computerScore + " - " + "YOU: " + userScore);
             Console.ResetColor();
 
             // Color

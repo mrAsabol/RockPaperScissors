@@ -59,7 +59,7 @@ namespace RockPaperScissors
                             PrintColorMessage(ConsoleColor.DarkGreen, "You WON!");
                             userScore++;
                             PrintColorMessage(ConsoleColor.Magenta, "Computer " + computerScore + ":" + "User " + userScore);
-                            PrintColorMessage(ConsoleColor.Cyan, "Play again? Y or N");
+                            PrintColorMessage(ConsoleColor.Cyan, "Do you want to play again? Y or N");
                             playAgain = Console.ReadLine().ToUpper();
                         }
                     }
